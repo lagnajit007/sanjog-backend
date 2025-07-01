@@ -2,6 +2,6 @@ flask==2.3.2
 flask-cors==4.0.0
 python-dotenv==1.0.0
 # Temporarily commented out to save disk space
-numpy==1.26.0
+numpy==1.24.4
 mediapipe==0.10.21
 tensorflow==2.16.1
