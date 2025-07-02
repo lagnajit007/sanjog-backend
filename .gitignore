@@ -6,3 +6,5 @@ __pycache__/
 *.pyc
 *.pkl
 *.pickle
+model.p
+asl_dataset.pickle
