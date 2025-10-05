@@ -4,6 +4,8 @@ flask==2.3.2
 flask-cors==4.0.0
 python-dotenv==1.0.0
 gunicorn==21.2.0
-numpy==1.24.4
-# scikit-learn is needed to unpickle and run the saved model
+
+# Python 3.12-compatible scientific stack (prebuilt wheels available)
+numpy==1.26.4
+scipy==1.11.4
 scikit-learn==1.3.2
