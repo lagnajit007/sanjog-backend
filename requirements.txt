@@ -3,7 +3,7 @@ wheel
 flask==2.3.2
 flask-cors==4.0.0
 python-dotenv==1.0.0
-# Temporarily commented out to save disk space
+gunicorn==21.2.0
 numpy==1.24.4
-mediapipe==0.10.21
-tensorflow==2.16.1
+# scikit-learn is needed to unpickle and run the saved model
+scikit-learn==1.3.2

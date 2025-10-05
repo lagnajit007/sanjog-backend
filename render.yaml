@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: sign-backend
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app2:app2 --bind 0.0.0.0:$PORT --workers 2 --threads 4 --timeout 120
+    plan: free
+    autoDeploy: true
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.5
+

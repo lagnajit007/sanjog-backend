@@ -16,7 +16,9 @@ app2 = Flask(__name__)
 CORS(app2)  # Enable CORS for all routes
 
 # Load trained model
-MODEL_PATH = 'backend/models/model.p'
+# Resolve model path relative to this file so it works from any CWD (e.g., Render rootDir=backend)
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+MODEL_PATH = os.getenv('MODEL_PATH', os.path.join(BASE_DIR, 'models', 'model.p'))
 
 # Global variables
 model = None
